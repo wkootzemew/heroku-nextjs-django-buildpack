@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "--- Copy Next.js Build to Staxio Static"
+exit 0
