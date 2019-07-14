@@ -3,7 +3,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 NEXTJS_BUILD_ID=`cat ${BUILD_DIR}/.next/BUILD_ID`
-SOURCE_DIR="${BUILD_DIR}/.next/${NEXTJS_BUILD_ID}/pages/components"
+SOURCE_DIR="${BUILD_DIR}/.next/${NEXTJS_BUILD_ID}/static/pages/components"
 DEST_DIR="${BUILD_DIR}/main/staticfiles"
 
 echo "Copying ${SOURCE_DIR} to ${DEST_DIR}"
