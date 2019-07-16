@@ -2,10 +2,10 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-NEXTJS_BUILD_ID=`cat ${BUILD_DIR}/.next/BUILD_ID`
-SOURCE_DIR="${BUILD_DIR}/.next/static/${NEXTJS_BUILD_ID}/pages/components"
-DEST_DIR="${BUILD_DIR}/main/staticfiles"
+SOURCE_DIR="${BUILD_DIR}/dist"
+DEST_DIR="${BUILD_DIR}/main/staticfiles/react"
 
 echo "Copying ${SOURCE_DIR} to ${DEST_DIR}"
+mkdir "${DEST_DIR}""
 cp -R ${SOURCE_DIR} ${DEST_DIR}
 
