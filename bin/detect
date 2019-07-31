@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "--- Copy Next.js Build to Staxio Static"
+echo "--- Copy React files to Django Static"
 exit 0
